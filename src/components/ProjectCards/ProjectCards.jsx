@@ -67,7 +67,7 @@ export const ProjectCards = () => {
                         capability to create, update and delete their own venues.
                     </p>
                     <div className="img-container">
-                        <img src="../../../images/Holidaze-exam.png" 
+                        <img src="/images/Holidaze-exam.png" 
                              alt="Holidaze"
                              className={isLandscape ? 'landscape' : ''}
                             >     
@@ -76,7 +76,7 @@ export const ProjectCards = () => {
                             className="fullscreen-icon" 
                             icon={faExpand}  
                             onClick={() => {
-                                openModal("../../../images/Holidaze-exam.png");
+                                openModal("/images/Holidaze-exam.png");
                                 toggleLandscape();
                             }}   
                         />
