@@ -10,4 +10,4 @@ export const darkTheme = {
     text: '#fff',
     color: "#fff",
 }
-    // ... other dark theme properties 
+    // ... other dark theme properties

@@ -80,9 +80,9 @@ export const ProjectCards = () => {
                             className="fullscreen-icon" 
                             icon={faExpand}  
                             onClick={() => {
-                                openModal({HolidazeImage});
-                                toggleLandscape();
-                            }}   
+                                openModal(HolidazeImage);
+                                setIsLandscape(!isLandscape);
+                            }}
                         />
                     </div>
                     <div className="icons-container">
@@ -119,7 +119,7 @@ export const ProjectCards = () => {
                         <FontAwesomeIcon 
                             className="fullscreen-icon" 
                             icon={faExpand}  
-                            onClick={() => openModal({SemesterProject2})}
+                            onClick={() => openModal(SemesterProject2)}
                         />
                     </Link>
                 </div>
@@ -153,7 +153,7 @@ export const ProjectCards = () => {
                     <FontAwesomeIcon 
                         className="fullscreen-icon" 
                         icon={faExpand}  
-                        onClick={() => openModal({MegaMerch})}
+                        onClick={() => openModal(MegaMerch)}
                     />
                 </div>
 

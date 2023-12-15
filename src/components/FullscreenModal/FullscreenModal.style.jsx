@@ -22,7 +22,7 @@ export const FullscreenModalStyleWrapper = styled.div`
         max-width: 80%;
         z-index: 99;
         border-radius: 3px;
-        border: 6px solid var(--blue);
+        border: 3px solid var(--card-border-color);
 
           .close-modal-btn {
             border-radius: 0;

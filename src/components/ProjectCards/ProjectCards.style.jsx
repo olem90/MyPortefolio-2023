@@ -73,7 +73,6 @@ display: flex;
 flex-direction: column;
 margin-inline: auto; 
 gap: 60px;
-border: 3px solid gold;
 
   .icons-container {
     display: flex;
@@ -86,7 +85,7 @@ border: 3px solid gold;
   h2 {
     font-family: var(--h2-font);
     font-weight: bold;
-    font-size: 34px;
+    font-size: 34px; 
   }
 
   h3 {
@@ -162,9 +161,10 @@ border: 3px solid gold;
 `
 
 export const ProjectCardsHolidayStyle = styled.div`
-border: 3px solid var(--blue);
+border: 3px solid var(--card-border-color);
 max-width: 600px;  
 text-align: center; 
+background: var(--card-background-color);
 opacity: 0; 
 transform-style: preserve-3d;
 backface-visibility: hidden;
@@ -206,7 +206,7 @@ box-shadow: var(--shadow-blue);
 `
 
 export const ProjectCardsJavascriptFrameworksStyle = styled.div`
-border: 3px solid var(--blue);
+border: 3px solid var(--card-border-color);
 max-width: 600px;  
 text-align: center; 
 opacity: 0; 
@@ -214,6 +214,7 @@ transform-style: preserve-3d;
 backface-visibility: hidden;
 border-radius: 3px;
 box-shadow: var(--box-shadow-light-blue);
+background: var(--card-background-color);
 
 p {
   padding-inline: 20px;
@@ -244,7 +245,7 @@ p {
 `
 
 export const ProjectCardsFefStyle = styled.div`
-border: 3px solid var(--blue);
+border: 3px solid var(--card-border-color);
 max-width: 600px;  
 text-align: center; 
 opacity: 0; 
@@ -252,6 +253,7 @@ transform-style: preserve-3d;
 backface-visibility: hidden;
 border-radius: 3px;
 box-shadow: var(--shadow-blue);
+background: var(--card-background-color);
 
 p {
   padding-inline: 20px;

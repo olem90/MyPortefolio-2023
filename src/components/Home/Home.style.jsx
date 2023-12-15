@@ -4,8 +4,7 @@ export const HomeWrapper = styled.div`
   min-height: 100vh;
   width: 600px;
   margin-inline: auto;
-  background: var(--background-light);
-  border: 3px solid red;
+  background: var(--background-light); 
 
   @media(max-width: 800px) {
     width: 90%;
