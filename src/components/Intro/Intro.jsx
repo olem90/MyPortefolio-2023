@@ -15,7 +15,7 @@ export const Intro = () => {
                 </div>
                 
                 <div className="dancing-dude">
-                    <img src="../../../public/images/dancer.png"></img>  
+                    <img src="/images/dancer.png"></img>  
                 </div>
             </IntroStyle>
         </IntroWrapper>

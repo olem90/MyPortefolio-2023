@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { FullscreenModal } from "../FullscreenModal/FullscreenModal";
 import { useInView } from 'react-intersection-observer';
+import HolidazeImage from '../../../public/images/Holidaze-exam.png';
 
 export const ProjectCards = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -67,7 +68,7 @@ export const ProjectCards = () => {
                         capability to create, update and delete their own venues.
                     </p>
                     <div className="img-container">
-                        <img src="/images/Holidaze-exam.png" 
+                        <img src={HolidazeImage} 
                              alt="Holidaze"
                              className={isLandscape ? 'landscape' : ''}
                             >     
