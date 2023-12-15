@@ -7,7 +7,10 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { FullscreenModal } from "../FullscreenModal/FullscreenModal";
 import { useInView } from 'react-intersection-observer';
-import HolidazeImage from '../../assets/images/Holidaze-exam.png';
+import HolidazeImage from '../../images/Holidaze-exam.png';
+import MegaMerch from "../../images/MegaMerch-FEF-CA.png";
+import SemesterProject2 from "../../images/SemesterProject2.png";
+
 
 export const ProjectCards = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -77,7 +80,7 @@ export const ProjectCards = () => {
                             className="fullscreen-icon" 
                             icon={faExpand}  
                             onClick={() => {
-                                openModal("/images/Holidaze-exam.png");
+                                openModal({HolidazeImage});
                                 toggleLandscape();
                             }}   
                         />
@@ -111,12 +114,12 @@ export const ProjectCards = () => {
                     for all, while reserving transactional activities for registered users.
                 </p>
                 <div className="img-container">
-                    <img src="../../../public/images/SemesterProject2.png"></img> 
+                    <img src={SemesterProject2}></img> 
                     <Link>
                         <FontAwesomeIcon 
                             className="fullscreen-icon" 
                             icon={faExpand}  
-                            onClick={() => openModal("../../../public/images/SemesterProject2.png")}
+                            onClick={() => openModal({SemesterProject2})}
                         />
                     </Link>
                 </div>
@@ -146,11 +149,11 @@ export const ProjectCards = () => {
                     form validation, offering an efficient and engaging online shopping experience.
                 </p>
                 <div className="img-container">
-                    <img src="../../../public/images/MegaMerch-FEF-CA.png"></img> 
+                    <img src={MegaMerch}></img> 
                     <FontAwesomeIcon 
                         className="fullscreen-icon" 
                         icon={faExpand}  
-                        onClick={() => openModal("../../../public/images/MegaMerch-FEF-CA.png")}
+                        onClick={() => openModal({MegaMerch})}
                     />
                 </div>
 

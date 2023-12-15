@@ -1,5 +1,6 @@
 import { IntroStyle } from "./Intro.style";
 import { IntroWrapper } from "./Intro.style";
+import Dancer from "../../images/dancer.png";
 
 export const Intro = () => {
     return (
@@ -15,7 +16,7 @@ export const Intro = () => {
                 </div>
                 
                 <div className="dancing-dude">
-                    <img src="/images/dancer.png"></img>  
+                    <img src={Dancer}></img>  
                 </div>
             </IntroStyle>
         </IntroWrapper>
