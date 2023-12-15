@@ -7,9 +7,17 @@ export const AboutStyle = styled.div`
   font-family: var(--body-font);
   color: var(--text-light); 
 
+    p {
+      font-size: 16px;
+    }
+
     h2 {
       font-family: var(--h2-font);
       font-weight: bold;
       font-size: 34px;
+    }
+
+    @media(max-width: 800px) {
+      width: 90%;
     }
 `

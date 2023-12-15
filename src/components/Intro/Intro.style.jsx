@@ -14,6 +14,10 @@ export const IntroWrapper = styled.div`
   margin-block: 90px 150px; 
   font-family: var(--body-font);
   color: var(--text-light);
+  
+    p {
+      font-size: 16px;
+    }
 
     .dancing-dude {
         margin-left: 70px; 
@@ -22,4 +26,18 @@ export const IntroWrapper = styled.div`
     img { 
         width: 150px;
     }
+
+  @media(max-width: 800px) {
+
+    img { 
+      width: 130px;
+    }
+
+    .dancing-dude { 
+      margin-left: 30px; 
+    } 
+
+
+
+  }
 `

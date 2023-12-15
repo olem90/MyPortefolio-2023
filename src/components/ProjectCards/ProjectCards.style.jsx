@@ -73,6 +73,7 @@ display: flex;
 flex-direction: column;
 margin-inline: auto; 
 gap: 60px;
+border: 3px solid gold;
 
   .icons-container {
     display: flex;
@@ -154,6 +155,10 @@ gap: 60px;
       color: ${props => (props.theme.color)};
     }
   }
+
+  @media(max-width: 800px) {
+    width: 90%;
+  }
 `
 
 export const ProjectCardsHolidayStyle = styled.div`
@@ -188,6 +193,16 @@ box-shadow: var(--shadow-blue);
       filter: brightness(40%);
     };
   };
+
+  @media(max-width: 800px) {
+    margin-inline: auto;
+
+      .img-container img.landscape {
+        width: auto;
+        height: 100vh;
+        object-fit: cover;
+      }
+  }
 `
 
 export const ProjectCardsJavascriptFrameworksStyle = styled.div`
@@ -222,6 +237,10 @@ p {
       filter: brightness(40%);
     };
   };
+
+  @media(max-width: 800px) {
+    margin-inline: auto;
+  }
 `
 
 export const ProjectCardsFefStyle = styled.div`
@@ -256,6 +275,10 @@ p {
       filter: brightness(45%);
     };
   };
+
+  @media(max-width: 800px) {
+    margin-inline: auto;
+  }
 `
 
  

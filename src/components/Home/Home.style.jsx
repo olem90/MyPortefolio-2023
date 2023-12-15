@@ -5,4 +5,9 @@ export const HomeWrapper = styled.div`
   width: 600px;
   margin-inline: auto;
   background: var(--background-light);
+  border: 3px solid red;
+
+  @media(max-width: 800px) {
+    width: 90%;
+  }
 `

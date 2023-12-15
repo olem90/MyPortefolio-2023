@@ -14,5 +14,15 @@ export const FooterStyle = styled.footer`
       font-family: 'Roboto Mono', monospace;
       font-size: 35px;
       font-weight: bold;
-    };
+
+      @media(max-width: 800px) {
+        font-size: 28px;
+      }
+
+      @media(max-width: 550px) {
+        font-size: 22px;
+      }
+    }
+
+   
 `

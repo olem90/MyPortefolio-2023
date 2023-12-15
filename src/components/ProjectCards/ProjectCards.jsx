@@ -11,7 +11,7 @@ import { useInView } from 'react-intersection-observer';
 export const ProjectCards = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
-    
+    const [isLandscape, setIsLandscape] = useState(false);
 
     const openModal = (imageSrc) => {
         setSelectedImage(imageSrc);
@@ -21,7 +21,11 @@ export const ProjectCards = () => {
     const closeModal = () => {
         setIsModalOpen(false);
         setSelectedImage(null);
-    }
+    };
+
+    const toggleLandscape = () => {
+        setIsLandscape(!isLandscape);
+    };
     
     const HoverText = () => {
         return (
@@ -63,11 +67,18 @@ export const ProjectCards = () => {
                         capability to create, update and delete their own venues.
                     </p>
                     <div className="img-container">
-                        <img src="../../../public/images/Holidaze-exam.png"></img> 
+                        <img src="../../../public/images/Holidaze-exam.png" 
+                             alt="Holidaze"
+                             className={isLandscape ? 'landscape' : ''}
+                            >     
+                        </img> 
                         <FontAwesomeIcon 
                             className="fullscreen-icon" 
                             icon={faExpand}  
-                            onClick={() => openModal("../../../public/images/Holidaze-exam.png")}
+                            onClick={() => {
+                                openModal("../../../public/images/Holidaze-exam.png");
+                                toggleLandscape();
+                            }}   
                         />
                     </div>
                     <div className="icons-container">
