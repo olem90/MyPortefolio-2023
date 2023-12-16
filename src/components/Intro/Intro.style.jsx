@@ -43,12 +43,12 @@ export const IntroWrapper = styled.div`
         }
 
       @media(max-width: 550px) {
-        margin-bottom : 60px;    
+        margin-bottom : 80px;     
       }
     }
   
     p { 
-      font-size: 16px; 
+      font-size: 16px;  
     }
 
     .dancing-dude {
