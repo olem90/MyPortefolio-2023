@@ -1,5 +1,4 @@
 import { NavStyles } from "./Nav.style";
-import { Link } from "react-router-dom";
 import { useTheme } from "../../ThemeContext/ThemeContext";
 import { ModeButton } from "../Buttons/Buttons.style";
 
@@ -10,7 +9,7 @@ export const Nav = () => {
     <NavStyles>
       <ul>
         <li>
-          <h1>My Portefolio</h1>
+          <h1>My Portfolio</h1>
         </li>
 
         <ModeButton onClick={toggleTheme}>
