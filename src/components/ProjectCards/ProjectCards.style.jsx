@@ -72,6 +72,7 @@ width: 100%;
 display: flex; 
 flex-direction: column;
 margin-inline: auto; 
+border: 2px solid red;
 
   .icons-container {
     display: flex;

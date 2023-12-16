@@ -23,7 +23,11 @@ export const AboutStyle = styled.div`
 
     @media(max-width: 400px) {
       p {
-        font-size: 14px;
+        font-size: 14px; 
       }
+    }
+
+    @media(max-width: 800px) {
+      width: 96%;
     }
 `
