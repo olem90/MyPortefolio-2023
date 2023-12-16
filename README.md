@@ -19,7 +19,7 @@ my technical abilities but also my journey in mastering front-end development.
 ### Installing
 1. Clone the repo:
 ```bash
-   gh repo clone olem90/MyPortefolio-2023
+gh repo clone olem90/MyPortefolio-2023
 ```
 2. Install the dependencies:
 ```bash
