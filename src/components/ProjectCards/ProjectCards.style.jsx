@@ -185,6 +185,10 @@ box-shadow: var(--shadow-blue);
   .img-container {
     position: relative;
 
+      img {
+        object-fit: cover;
+      }
+
     &:hover .fa-expand {
       display: block;
     };

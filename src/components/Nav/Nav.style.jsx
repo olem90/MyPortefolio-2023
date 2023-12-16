@@ -13,11 +13,19 @@ export const NavStyles = styled.nav`
             white-space: nowrap;
             font-size: 55px;
             font-weight: bold;
+            border: 2px solid gold;
           }
 
           @media(max-width: 800px) {
             h1 {
               font-size: 45px;
+            }
+          }
+
+          @media(max-width: 550px) {
+            h1 {
+              font-size: 32px;
+              margin-left: 0;
             }
           }
     }
