@@ -19,5 +19,21 @@ my technical abilities but also my journey in mastering front-end development.
 ### Installing
 1. Clone the repo:
 ```bash
+   gh repo clone olem90/MyPortefolio-2023
+```
+2. Install the dependencies:
+```bash
+npm install
+```
+
+### Running
+```bash
+npm run dev
+```
+
+### Contact
+- [My LinkedIn Profile](https://www.linkedin.com/in/ole-marius-sand%C3%B8-rognan-923202249/)
+- Add me on discord: ```olerognanjan22ft#9663```
+- Email: olemariusrognan90@gmail.com
 
 
