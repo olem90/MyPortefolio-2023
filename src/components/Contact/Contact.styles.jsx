@@ -6,7 +6,6 @@ export const ContactIconContainer = styled.div`
   padding-block: 20px;
   width: 340px;
   color: var(--text-light);
-  margin-inline: auto;
   
   span {
     font-size: 15px; 
@@ -42,6 +41,10 @@ export const ContactIconContainer = styled.div`
       color: rebeccapurple;
       cursor: pointer;
     }
+  }
+
+  @media(max-width: 550px) {
+    margin-inline: auto;
   }
 `
 

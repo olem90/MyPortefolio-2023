@@ -21,7 +21,10 @@ export const FullscreenModal = ({ closeModal, selectedImage, isModalOpen }) => {
     return (
         <FullscreenModalStyleWrapper>
             <div className="modal" ref={modalRef}>
-                <img src={selectedImage} alt="Fullscreen Image" />
+                <img src={selectedImage} 
+                    alt="Fullscreen Image" 
+                    className={isLandscape ? 'landscape' : ''} 
+                />
                 <button className="close-modal-btn" onClick={closeModal}>Close Modal</button>
             </div>
         </FullscreenModalStyleWrapper>

@@ -21,7 +21,7 @@ export const ModeButton = styled.button`
     padding: 0;  
     width: 88px;
     margin-right: 5px; 
-    font-size: 13px;
+    font-size: 12px;
     border: 1px solid var(--color-light);
     outline: 1px solid var(--color-light);
   }

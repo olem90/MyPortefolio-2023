@@ -81,7 +81,7 @@ export const ProjectCards = () => {
                             icon={faExpand}  
                             onClick={() => {
                                 openModal(HolidazeImage);
-                                setIsLandscape(!isLandscape);
+                                toggleLandscape(!isLandscape);
                             }}
                         />
                     </div>
@@ -180,6 +180,7 @@ export const ProjectCards = () => {
                 isModalOpen={isModalOpen} 
                 selectedImage={selectedImage} 
                 closeModal={closeModal} 
+                isLandscape={isLandscape}
                 />
         </ProjectCardsWrapper> 
     ) 
