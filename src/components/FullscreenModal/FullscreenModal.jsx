@@ -1,7 +1,7 @@
 import { FullscreenModalStyleWrapper } from "./FullscreenModal.style";
 import React, { useEffect, useRef } from 'react';
 
-export const FullscreenModal = ({ closeModal, selectedImage, isModalOpen }) => {
+export const FullscreenModal = ({ closeModal, selectedImage, isModalOpen, isLandscape }) => {
     if(!isModalOpen) return null;
     const modalRef = useRef();
 

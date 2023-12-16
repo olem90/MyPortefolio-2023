@@ -6,19 +6,17 @@ export const FullscreenModalStyleWrapper = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.8); /* Dim background */
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid red;
     min-height: 100dvh;
-    border: 2px solid red; 
-
+   
     .modal{
         display: flex;
         flex-direction: column;
-        min-height: 80%;
-        max-height: 80%;
+        
+        height: auto;
         max-width: 80%;
         z-index: 99;
         border-radius: 3px;
@@ -49,5 +47,14 @@ export const FullscreenModalStyleWrapper = styled.div`
         max-height: 100%;
         object-fit: cover; 
         margin-inline: auto;
+    }
+
+    @media(max-width: 800px) {
+        
+        .modal {
+            
+            max-width: 97%;
+            min-width: 97%;
+        }
     }
 `

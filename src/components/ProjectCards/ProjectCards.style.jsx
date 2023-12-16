@@ -112,6 +112,11 @@ gap: 60px;
     &:hover {
       cursor: pointer;
     }
+
+    @media(max-width: 800px) {
+      display: block;
+      color: #000;
+    }
   }
 
   .github-icon {
@@ -185,9 +190,9 @@ box-shadow: var(--shadow-blue);
   .img-container {
     position: relative;
 
-      img {
-        object-fit: cover;
-      }
+    img {
+      object-fit: cover;
+    }
 
     &:hover .fa-expand {
       display: block;
@@ -195,6 +200,10 @@ box-shadow: var(--shadow-blue);
 
     &:hover img {
       filter: brightness(40%);
+
+      @media(max-width: 800px) {
+        filter: brightness(100%);
+      }
     };
   };
 
@@ -203,7 +212,7 @@ box-shadow: var(--shadow-blue);
 
       .img-container img.landscape {
         width: auto;
-        height: 100vh;
+        height: 100%;
         object-fit: cover;
       }
   }
