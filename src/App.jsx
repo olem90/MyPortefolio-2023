@@ -6,7 +6,6 @@ import { Layout } from './components/Layout/Layout';
 import { MyThemeProvider } from './ThemeContext/ThemeContext';
 import { lightTheme, darkTheme } from './Themes/Themes';
 import { createGlobalStyle } from 'styled-components';
-import { About } from './components/About/About';
 
 const GlobalStyle = createGlobalStyle`
   body {
