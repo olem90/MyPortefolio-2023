@@ -9,6 +9,7 @@ export const ContactIconContainer = styled.div`
   
   span {
     font-size: 15px; 
+    margin-top: 5px;
   }
 
   :nth-child(1) {

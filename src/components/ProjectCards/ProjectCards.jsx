@@ -56,7 +56,7 @@ export const ProjectCards = () => {
 
     return(
         <ProjectCardsWrapper>
-            <h2>My Projects</h2>
+            <h2 className="my-projects-h2">My Projects</h2>
 
             <ProjectCardsHolidayStyle ref={holidayRef} className={holidayInView ? 'in-view' : ''}>
                     <h3>Holidaze</h3>

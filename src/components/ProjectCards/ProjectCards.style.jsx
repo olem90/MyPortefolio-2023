@@ -72,7 +72,6 @@ width: 100%;
 display: flex; 
 flex-direction: column;
 margin-inline: auto; 
-gap: 60px;
 
   .icons-container {
     display: flex;
@@ -86,6 +85,10 @@ gap: 60px;
     font-family: var(--h2-font);
     font-weight: bold;
     font-size: 34px; 
+  }
+
+  .my-projects-h2 {
+    margin-top: 100px;
   }
 
   h3 {
@@ -175,6 +178,7 @@ transform-style: preserve-3d;
 backface-visibility: hidden;
 border-radius: 3px;
 box-shadow: var(--shadow-blue);
+margin-bottom: 150px;
 
   p {
     padding-inline: 20px;
@@ -235,6 +239,7 @@ backface-visibility: hidden;
 border-radius: 3px;
 box-shadow: var(--box-shadow-light-blue);
 background: var(--card-background-color);
+margin-bottom: 100px;
 
 p {
   padding-inline: 20px;
@@ -274,6 +279,7 @@ backface-visibility: hidden;
 border-radius: 3px;
 box-shadow: var(--shadow-blue);
 background: var(--card-background-color);
+margin-bottom: 150px;
 
 p {
   padding-inline: 20px;
