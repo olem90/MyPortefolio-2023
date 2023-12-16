@@ -8,6 +8,7 @@ export const HoverTextStyle = styled.span`
   font-size: 15px;
   opacity: 0;
   visibility: hidden;
+  color: var(--text-light);
   transition:
     opacity 0.3s ease-in,
     visibility 0.3s ease-in;
@@ -19,7 +20,7 @@ export const HoverTextStyle = styled.span`
   }
 
   @media(max-width: 800px) {
-    visibility: visible;
+    visibility: visible; 
     opacity: 1; 
     font-size: 13px; 
     right: -17px;   
