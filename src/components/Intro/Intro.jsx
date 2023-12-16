@@ -12,7 +12,7 @@ export const Intro = () => {
             Portefolio. I am <strong>Ole Marius Sandø Rognan</strong>.
           </p>
           <p>
-            I am ready to take on new challenges, I look forward to bringing
+            I am ready to take on new challenges, and I look forward to bringing
             your digital projects to life!
           </p>
         </div>
