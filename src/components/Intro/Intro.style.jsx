@@ -15,9 +15,36 @@ export const IntroWrapper = styled.div`
   font-family: var(--body-font);
   color: var(--text-light);
   border-bottom: 7px solid silver;
+
+    .github-icon-intro {
+      font-size: 42px; 
+    }
+
+    .github-intro-icon-container {
+      display: flex;
+      flex-direction: column;  
+      width: 94px;    
+
+        a {
+          width: fit-content;    
+          margin-inline: auto;  
+          border-radius: 25px; 
+          color: var(--icon-color); 
+
+          &:hover {
+            color: rebeccapurple;
+            cursor: pointer;
+          }
+        } 
+
+        span {
+          white-space: nowrap;  
+          margin-bottom: 15px;  
+        }
+    }
   
-    p {
-      font-size: 16px;
+    p { 
+      font-size: 16px; 
     }
 
     .dancing-dude {
