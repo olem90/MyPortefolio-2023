@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
 export const HoverTextStyle = styled.span`
   position: absolute;
@@ -8,14 +8,16 @@ export const HoverTextStyle = styled.span`
   font-size: 15px;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+  transition:
+    opacity 0.3s ease-in,
+    visibility 0.3s ease-in;
 
   .github-icon-container:hover & {
-    opacity: 0.7; 
+    opacity: 0.7;
     visibility: visible;
     color: var(--text-light);
   }
-`
+`;
 
 export const HoverTextProjectStyle = styled(HoverTextStyle)`
   position: absolute;
@@ -25,14 +27,16 @@ export const HoverTextProjectStyle = styled(HoverTextStyle)`
   font-size: 15px;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+  transition:
+    opacity 0.3s ease-in,
+    visibility 0.3s ease-in;
 
   .project-icon-container:hover & {
-    opacity: 0.7; 
+    opacity: 0.7;
     visibility: visible;
     color: var(--text-light);
   }
-`
+`;
 
 const flipInOpposite = keyframes`
   from {
@@ -68,24 +72,23 @@ const flipX = keyframes`
 `;
 
 export const ProjectCardsWrapper = styled.div`
-width: 100%; 
-display: flex; 
-flex-direction: column;
-margin-inline: auto; 
-border: 2px solid red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
 
   .icons-container {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    gap: 40px; 
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     border-bottom: 15px;
   }
 
   h2 {
     font-family: var(--h2-font);
     font-weight: bold;
-    font-size: 34px; 
+    font-size: 34px;
   }
 
   .my-projects-h2 {
@@ -100,8 +103,8 @@ border: 2px solid red;
 
   img {
     max-width: 100%;
-    min-height: 100%; 
-    object-fit: cover; 
+    min-height: 100%;
+    object-fit: cover;
     transition: filter 0.3s ease;
   }
 
@@ -112,12 +115,12 @@ border: 2px solid red;
     font-size: 26px;
     display: none;
     color: #fff;
-    
+
     &:hover {
       cursor: pointer;
     }
 
-    @media(max-width: 800px) {
+    @media (max-width: 800px) {
       display: block;
       color: #000;
     }
@@ -135,26 +138,26 @@ border: 2px solid red;
     color: var(--icon-color);
   }
 
-  .github-icon-container, .project-icon-container {
+  .github-icon-container,
+  .project-icon-container {
     position: relative;
     width: fit-content;
-    border-radius: 50%; 
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 17px;
-    color: #000; 
+    color: #000;
     background: var(--background-light);
-   
 
-    &:hover .github-icon { 
+    &:hover .github-icon {
       color: rebeccapurple;
-      cursor: pointer; 
+      cursor: pointer;
     }
 
-    &:hover .project-icon { 
+    &:hover .project-icon {
       color: rebeccapurple;
-      cursor: pointer; 
+      cursor: pointer;
     }
 
     &:hover ${HoverTextStyle} {
@@ -164,33 +167,33 @@ border: 2px solid red;
     }
   }
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     width: 96%;
   }
-`
+`;
 
 export const ProjectCardsHolidayStyle = styled.div`
-border: 3px solid var(--card-border-color);
-max-width: 600px;  
-text-align: center; 
-background: var(--card-background-color);
-opacity: 0; 
-transform-style: preserve-3d;
-backface-visibility: hidden;
-border-radius: 3px;
-box-shadow: var(--shadow-blue);
-margin-bottom: 120px;
+  border: 3px solid var(--card-border-color);
+  max-width: 600px;
+  text-align: center;
+  background: var(--card-background-color);
+  opacity: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: var(--shadow-blue);
+  margin-bottom: 120px;
 
   p {
     padding-inline: 20px;
-    text-align: left; 
+    text-align: left;
     font-family: var(--body-font);
     font-size: 15px;
   }
 
-&.in-view {
-  animation: ${flipIn} 1.5s ease forwards;
-}
+  &.in-view {
+    animation: ${flipIn} 1.5s ease forwards;
+  }
 
   .img-container {
     position: relative;
@@ -201,124 +204,117 @@ margin-bottom: 120px;
 
     &:hover .fa-expand {
       display: block;
-    };
+    }
 
     &:hover img {
       filter: brightness(40%);
 
-      @media(max-width: 800px) {
+      @media (max-width: 800px) {
         filter: brightness(100%);
       }
-    };
-  };
+    }
+  }
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     margin-inline: auto;
 
-      .img-container img.landscape {
-        width: auto;
-        height: 100%;
-        object-fit: cover;
-      }
+    .img-container img.landscape {
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
-  @media(max-width: 550px) {
+  @media (max-width: 550px) {
     max-width: 100%;
     min-width: 100%;
-
   }
-`
-
+`;
 
 export const ProjectCardsJavascriptFrameworksStyle = styled.div`
-border: 3px solid var(--card-border-color);
-max-width: 600px;  
-text-align: center; 
-opacity: 0; 
-transform-style: preserve-3d;
-backface-visibility: hidden;
-border-radius: 3px;
-box-shadow: var(--box-shadow-light-blue);
-background: var(--card-background-color);
-margin-bottom: 100px;
+  border: 3px solid var(--card-border-color);
+  max-width: 600px;
+  text-align: center;
+  opacity: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: var(--box-shadow-light-blue);
+  background: var(--card-background-color);
+  margin-bottom: 100px;
 
-p {
-  padding-inline: 20px;
-  text-align: left; 
-  font-family: var(--body-font);
-  font-size: 15px;
-}
+  p {
+    padding-inline: 20px;
+    text-align: left;
+    font-family: var(--body-font);
+    font-size: 15px;
+  }
 
-&.in-view {
-  animation: ${flipInOpposite} 2s ease forwards;
-}
+  &.in-view {
+    animation: ${flipInOpposite} 2s ease forwards;
+  }
 
   .img-container {
     position: relative;
 
     &:hover .fa-expand {
       display: block;
-    };
+    }
 
     &:hover img {
       filter: brightness(40%);
-   
-    @media(max-width: 800px) {
-      filter: brightness(100%);
+
+      @media (max-width: 800px) {
+        filter: brightness(100%);
+      }
     }
-    };
+  }
 
-  };
-
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     margin-inline: auto;
   }
-`
+`;
 
 export const ProjectCardsFefStyle = styled.div`
-border: 3px solid var(--card-border-color);
-max-width: 600px;  
-text-align: center; 
-opacity: 0; 
-transform-style: preserve-3d;
-backface-visibility: hidden;
-border-radius: 3px;
-box-shadow: var(--shadow-blue);
-background: var(--card-background-color);
-margin-bottom: 120px;
+  border: 3px solid var(--card-border-color);
+  max-width: 600px;
+  text-align: center;
+  opacity: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: var(--shadow-blue);
+  background: var(--card-background-color);
+  margin-bottom: 120px;
 
-p {
-  padding-inline: 20px;
-  text-align: left; 
-  font-family: var(--body-font);
-  font-size: 15px;
-}
+  p {
+    padding-inline: 20px;
+    text-align: left;
+    font-family: var(--body-font);
+    font-size: 15px;
+  }
 
-&.in-view {
-  animation: ${flipX} 2s ease forwards;
-}
+  &.in-view {
+    animation: ${flipX} 2s ease forwards;
+  }
 
   .img-container {
     position: relative;
 
     &:hover .fa-expand {
       display: block;
-    };
+    }
 
     &:hover img {
       filter: brightness(45%);
 
-      @media(max-width: 800px) {
+      @media (max-width: 800px) {
         filter: brightness(100%);
       }
-    };
+    }
+  }
 
-    
-  };
-
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     margin-inline: auto;
   }
-`
-
- 
+`;

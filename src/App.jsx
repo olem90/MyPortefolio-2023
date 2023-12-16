@@ -1,11 +1,11 @@
-import './App.css';
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Home } from './components/Home/Home';
-import { Layout } from './components/Layout/Layout';
-import { MyThemeProvider } from './ThemeContext/ThemeContext';
-import { lightTheme, darkTheme } from './Themes/Themes';
-import { createGlobalStyle } from 'styled-components';
+import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./components/Home/Home";
+import { Layout } from "./components/Layout/Layout";
+import { MyThemeProvider } from "./ThemeContext/ThemeContext";
+import { lightTheme, darkTheme } from "./Themes/Themes";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -16,11 +16,10 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function App() {
-  
   return (
     <MyThemeProvider lightTheme={lightTheme} darkTheme={darkTheme}>
       <GlobalStyle />
-      <Router> 
+      <Router>
         <Layout>
           <Routes>
             <Route path="/home" element={<Home />} />
@@ -28,8 +27,8 @@ function App() {
           </Routes>
         </Layout>
       </Router>
-    </MyThemeProvider> 
-  )
+    </MyThemeProvider>
+  );
 }
 
 export default App;

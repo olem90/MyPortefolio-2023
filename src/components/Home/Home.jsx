@@ -6,13 +6,13 @@ import { Intro } from "../Intro/Intro";
 import { About } from "../About/About";
 
 export const Home = () => {
-    const { theme } = useTheme();
+  const { theme } = useTheme();
 
-    return (
-        <HomeWrapper theme={theme}>
-            <Intro />
-            <About />
-            <ProjectCards /> 
-        </HomeWrapper> 
-    )
-}  
+  return (
+    <HomeWrapper theme={theme}>
+      <Intro />
+      <About />
+      <ProjectCards />
+    </HomeWrapper>
+  );
+};

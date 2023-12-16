@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const IntroStyle = styled.div`
-  width: 660px; 
+  width: 660px;
   height: 200px;
-  margin: auto; 
-  display: flex; 
-  align-items: center;  
-`
+  margin: auto;
+  display: flex;
+  align-items: center;
+`;
 
 export const IntroWrapper = styled.div`
   width: 100%; 
@@ -59,4 +59,4 @@ export const IntroWrapper = styled.div`
   }
 
  
-`
+`;

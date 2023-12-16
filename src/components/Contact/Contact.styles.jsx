@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const ContactIconContainer = styled.div`
   display: flex;
@@ -6,9 +6,9 @@ export const ContactIconContainer = styled.div`
   padding-block: 20px;
   width: 340px;
   color: var(--text-light);
-  
+
   span {
-    font-size: 15px; 
+    font-size: 15px;
     margin-top: 5px;
   }
 
@@ -27,15 +27,15 @@ export const ContactIconContainer = styled.div`
     align-items: center;
 
     a {
-        display: flex;
-        margin-inline: auto; 
-      }
+      display: flex;
+      margin-inline: auto;
+    }
   }
 
   .contact-icon {
     display: flex;
     font-size: 40px;
-    margin-inline: auto; 
+    margin-inline: auto;
     color: var(--icon-color);
 
     &:hover {
@@ -44,17 +44,17 @@ export const ContactIconContainer = styled.div`
     }
   }
 
-  @media(max-width: 550px) {
+  @media (max-width: 550px) {
     margin-inline: auto;
   }
 
-  @media(max-width: 400px) {
+  @media (max-width: 400px) {
     width: 100%;
   }
-`
+`;
 
 export const ContactIconWrapper = styled.div`
   p {
     font-size: 18px;
   }
-`
+`;
