@@ -262,6 +262,10 @@ p {
     &:hover img {
       filter: brightness(40%);
     };
+
+    @media(max-width: 800px) {
+      filter: brightness(100%);
+    }
   };
 
   @media(max-width: 800px) {
@@ -302,6 +306,10 @@ p {
     &:hover img {
       filter: brightness(45%);
     };
+
+    @media(max-width: 800px) {
+      filter: brightness(100%);
+    }
   };
 
   @media(max-width: 800px) {
