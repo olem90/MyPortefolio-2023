@@ -17,9 +17,16 @@ export const HoverTextStyle = styled.span`
     visibility: visible;
     color: var(--text-light);
   }
+
+  @media(max-width: 800px) {
+    visibility: visible;
+    opacity: 1; 
+    font-size: 13px; 
+    right: -17px;   
+  }
 `;
 
-export const HoverTextProjectStyle = styled(HoverTextStyle)`
+export const HoverTextProjectStyle = styled(HoverTextStyle)` 
   position: absolute;
   top: -20px;
   right: -36px;
@@ -30,11 +37,18 @@ export const HoverTextProjectStyle = styled(HoverTextStyle)`
   transition:
     opacity 0.3s ease-in,
     visibility 0.3s ease-in;
-
+ 
   .project-icon-container:hover & {
     opacity: 0.7;
     visibility: visible;
     color: var(--text-light);
+  }
+
+  @media(max-width: 800px) {
+    visibility: visible;
+    opacity: 1; 
+    font-size: 13px;  
+    right: -28px;       
   }
 `;
 

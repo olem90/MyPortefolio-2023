@@ -13,7 +13,7 @@ export const Nav = () => {
         </li>
 
         <ModeButton onClick={toggleTheme}>
-          {theme === "light" ? "Dark Mode" : "Light Mode"}
+          {theme === "light" ? "Dark Mode" : "Light Mode"} 
         </ModeButton>
       </ul>
     </NavStyles>

@@ -28,7 +28,7 @@ export const NavStyles = styled.nav`
     }
 
     @media (max-width: 400px) {
-      h1 {
+      h1 { 
         font-size: 28px;
       }
     }

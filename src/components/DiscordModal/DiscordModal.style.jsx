@@ -40,12 +40,13 @@ export const DiscordModalStyle = styled.div`
   .close-btn {
     padding: 5px;
     width: 100%;
-    margin-block: 17px 9px;
+    margin-block: 17px 9px; 
     background: var(--color-light);
     color: var(--background-light);
     font-weight: bold;
+    border-radius: 0;
     outline: 2px solid transparent;
-    border: 2px solid transparent;
+    border: 2px solid transparent; 
 
     &:hover {
       opacity: 0.86;
