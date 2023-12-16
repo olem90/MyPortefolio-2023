@@ -41,6 +41,10 @@ export const IntroWrapper = styled.div`
           white-space: nowrap;  
           margin-bottom: 15px;  
         }
+
+      @media(max-width: 550px) {
+        margin-bottom : 60px;    
+      }
     }
   
     p { 
