@@ -1,7 +1,7 @@
 import { ProjectCardsHolidayStyle, ProjectCardsJavascriptFrameworksStyle, ProjectCardsFefStyle } from "./ProjectCards.style";
 import { ProjectCardsWrapper, HoverTextStyle, HoverTextProjectStyle } from "./ProjectCards.style";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp, faExpand, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faExpand, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
@@ -10,7 +10,7 @@ import { useInView } from 'react-intersection-observer';
 import HolidazeImage from '../../images/Holidaze-exam.png';
 import MegaMerch from "../../images/MegaMerch-FEF-CA.png";
 import SemesterProject2 from "../../images/SemesterProject2.png";
-
+import { Contact } from "../Contact/Contact";
 
 export const ProjectCards = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -46,7 +46,7 @@ export const ProjectCards = () => {
     const useCardInView = () => {
         return useInView({
             triggerOnce: true,
-            threshold: 0.5, 
+            threshold: 0.56,  
         });
     };
 
@@ -173,6 +173,8 @@ export const ProjectCards = () => {
                     </div>
                 </div>   
             </ProjectCardsJavascriptFrameworksStyle> 
+            
+            <Contact />
 
             <FullscreenModal 
                 isModalOpen={isModalOpen} 

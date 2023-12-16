@@ -117,13 +117,13 @@ gap: 60px;
   .github-icon {
     font-size: 43px;
     transition: color 0.3s;
-    color: var(--text-light);
+    color: var(--icon-color);
   }
 
   .project-icon {
     font-size: 39px;
     transition: color 0.3s;
-    color: var(--text-light);
+    color: var(--icon-color);
   }
 
   .github-icon-container, .project-icon-container {
@@ -151,7 +151,7 @@ gap: 60px;
     &:hover ${HoverTextStyle} {
       opacity: 1;
       visibility: visible;
-      color: ${props => (props.theme.color)};
+      color: var(--text-light);
     }
   }
 
@@ -202,6 +202,37 @@ box-shadow: var(--shadow-blue);
         height: 100vh;
         object-fit: cover;
       }
+  }
+`
+
+export const ContactIconContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding-block: 20px;
+  width: 340px;
+
+  :nth-child(1) {
+    margin-left: 30px;
+  }
+
+  :nth-child(3) {
+    margin-right: 30px;
+  }
+
+  .single-icon-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .contact-icon {
+    font-size: 40px;
+    margin-inline: auto;
+    color: 
+
+    &:hover {
+      color: rebeccapurple;
+    }
   }
 `
 

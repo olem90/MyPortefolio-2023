@@ -20,6 +20,9 @@ export const MyThemeProvider = ({ children }) => {
       root.style.setProperty('--header-shadow', 'var(--header-shadow-dark)');
       root.style.setProperty('--card-background-color', 'var(--background-light-blue)');
       root.style.setProperty('--card-border-color', 'var(--dark-metal)');
+      root.style.setProperty('--icon-color', 'var(--blue-dark)');
+      root.style.setProperty('--icon-color', 'var(--blue-dark)');
+
       // Set other light theme variables 
   } else {
       root.style.setProperty('--blue', 'var(--blue-dark)');
@@ -27,6 +30,7 @@ export const MyThemeProvider = ({ children }) => {
       root.style.setProperty('--header-shadow', 'var(--header-shadow-light)');
       root.style.setProperty('--card-background-color', 'var(--background-dark-blue)');
       root.style.setProperty('--card-border-color', 'var(--light-silver)');
+      root.style.setProperty('--icon-color', 'var(--blue-light)');
       // Set other dark theme variables
   }
 };

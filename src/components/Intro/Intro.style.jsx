@@ -14,6 +14,7 @@ export const IntroWrapper = styled.div`
   margin-block: 90px 150px; 
   font-family: var(--body-font);
   color: var(--text-light);
+  border-bottom: 7px solid silver;
   
     p {
       font-size: 16px;
