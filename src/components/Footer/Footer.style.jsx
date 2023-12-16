@@ -20,7 +20,11 @@ export const FooterStyle = styled.footer`
       }
 
       @media(max-width: 550px) {
-        font-size: 22px;
+        font-size: 20px;
+      }
+
+      @media(max-width: 400px) {
+        font-size: 17px;
       }
     }
 

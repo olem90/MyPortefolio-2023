@@ -12,7 +12,7 @@ export const Contact = () => {
     return (
         <ContactIconWrapper>
             <h2>Contact Me</h2>
-            <p>You can get in contact with me through the icons below</p> 
+            <p>You can get in touch with me through the icons below</p> 
             <ContactIconContainer>
                 <div className="single-icon-container">
                     <a>

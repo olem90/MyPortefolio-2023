@@ -161,7 +161,7 @@ gap: 60px;
   }
 
   @media(max-width: 800px) {
-    width: 90%;
+    width: 96%;
   }
 `
 
@@ -216,38 +216,14 @@ box-shadow: var(--shadow-blue);
         object-fit: cover;
       }
   }
-`
 
-export const ContactIconContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding-block: 20px;
-  width: 340px;
+  @media(max-width: 550px) {
+    max-width: 100%;
+    min-width: 100%;
 
-  :nth-child(1) {
-    margin-left: 30px;
-  }
-
-  :nth-child(3) {
-    margin-right: 30px;
-  }
-
-  .single-icon-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-
-  .contact-icon {
-    font-size: 40px;
-    margin-inline: auto;
-    color: 
-
-    &:hover {
-      color: rebeccapurple;
-    }
   }
 `
+
 
 export const ProjectCardsJavascriptFrameworksStyle = styled.div`
 border: 3px solid var(--card-border-color);

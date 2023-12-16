@@ -37,8 +37,26 @@ export const IntroWrapper = styled.div`
     .dancing-dude { 
       margin-left: 30px; 
     } 
-
-
-
   }
+
+  @media(max-width: 550px) {
+    p {
+      padding-inline: 14px;
+    }
+
+  @media(max-width: 400px) {
+    p {
+      font-size: 14px;
+    }
+
+    img { 
+      width: 110px;
+    }
+
+    .dancing-dude { 
+      margin-left: 10px; 
+    } 
+  }
+
+ 
 `

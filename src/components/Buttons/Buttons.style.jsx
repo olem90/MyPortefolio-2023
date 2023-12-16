@@ -25,4 +25,11 @@ export const ModeButton = styled.button`
     border: 1px solid var(--color-light);
     outline: 1px solid var(--color-light);
   }
+
+  @media(max-width: 400px) {
+    width: 70px;
+    font-size: 10px;
+    height: 25px;
+
+  }
 `

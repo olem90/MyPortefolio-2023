@@ -24,7 +24,18 @@ export const NavStyles = styled.nav`
           @media(max-width: 550px) {
             h1 {
               font-size: 32px;
-              margin-left: 0;
+            }
+          }
+
+          @media(max-width: 400px) {
+            h1 {
+              font-size: 28px;
+            }
+          }
+
+          @media(max-width: 350px) {
+            h1 {
+              font-size: 22px;
             }
           }
     }
