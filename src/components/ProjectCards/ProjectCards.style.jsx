@@ -178,7 +178,7 @@ transform-style: preserve-3d;
 backface-visibility: hidden;
 border-radius: 3px;
 box-shadow: var(--shadow-blue);
-margin-bottom: 150px;
+margin-bottom: 120px;
 
   p {
     padding-inline: 20px;
@@ -284,7 +284,7 @@ backface-visibility: hidden;
 border-radius: 3px;
 box-shadow: var(--shadow-blue);
 background: var(--card-background-color);
-margin-bottom: 150px;
+margin-bottom: 120px;
 
 p {
   padding-inline: 20px;
