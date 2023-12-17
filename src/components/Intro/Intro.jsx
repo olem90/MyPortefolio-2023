@@ -11,7 +11,7 @@ export const Intro = () => {
         <div>
           <p>
             <strong>Hello</strong> and <strong>welcome</strong> to my
-            Portefolio. I am <strong>Ole Marius Sandø Rognan</strong>.
+            Portfolio. I am <strong>Ole Marius Sandø Rognan</strong>.
           </p>
           <p>
             I am ready to take on new challenges, and I look forward to bringing 
