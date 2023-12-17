@@ -5,7 +5,7 @@
 }
 
 :root {
-    /* Light Colors */
+    /* Light Mode Colors */
     --background-light: #e9e9e9;
     --background-light-blue: #eff7ff;
     --background-light-lavender: #f3f0ff;
@@ -22,7 +22,7 @@
     --header-shadow-light: 0 2px 4px rgba(255, 255, 255, 0.3), 
                           0 0 6px rgba(180, 180, 180, 0.3); 
               
-    /* Dark Colors */
+    /* Dark Mode Colors */
     --background-dark: #000;
     --background-deep-gray: #121212;
     --background-dark-blue: #0a192f;

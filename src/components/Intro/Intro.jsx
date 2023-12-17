@@ -27,7 +27,6 @@ export const Intro = () => {
             <span>Github Profile </span> 
           </div>
         </div>
-
         <div className="dancing-dude">
           <img src={Dancer}></img>
         </div>

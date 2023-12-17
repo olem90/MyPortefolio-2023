@@ -34,7 +34,6 @@ export const MyThemeProvider = ({ children }) => {
       root.style.setProperty("--icon-color", "var(--blue-dark)");
       root.style.setProperty("--icon-color", "var(--blue-dark)");
 
-      // Set other light theme variables
     } else {
       root.style.setProperty("--blue", "var(--blue-dark)");
       root.style.setProperty("--shadow-blue", "var(--box-shadow-light-blue)");
@@ -44,8 +43,7 @@ export const MyThemeProvider = ({ children }) => {
         "var(--background-dark-blue)",
       );
       root.style.setProperty("--card-border-color", "var(--light-silver)");
-      root.style.setProperty("--icon-color", "var(--blue-light)");
-      // Set other dark theme variables
+      root.style.setProperty("--icon-color", "var(--blue-light)");   
     }
   };
   const savedTheme = localStorage.getItem("theme") || "light";

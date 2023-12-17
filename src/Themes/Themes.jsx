@@ -2,7 +2,6 @@ export const lightTheme = {
   background: "#fff",
   text: "#000",
   color: "#000",
-  // ... other light theme properties
 };
 
 export const darkTheme = {
@@ -10,4 +9,4 @@ export const darkTheme = {
   text: "#fff",
   color: "#fff",
 };
-// ... other dark theme properties
+
