@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const HoverTextStyle = styled.span`
   position: absolute;
@@ -6,7 +6,7 @@ export const HoverTextStyle = styled.span`
   right: -23px;
   transform: translateX(-50%);
   font-size: 15px;
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
   color: var(--text-light);
   transition:
@@ -33,7 +33,6 @@ export const HoverTextProjectStyle = styled(HoverTextStyle)`
   right: -36px;
   transform: translateX(-50%);
   font-size: 15px;
-  opacity: 0;
   visibility: hidden;
   transition:
     opacity 0.3s ease-in,
@@ -50,39 +49,6 @@ export const HoverTextProjectStyle = styled(HoverTextStyle)`
     opacity: 1; 
     font-size: 13px;  
     right: -28px;       
-  }
-`;
-
-const flipInOpposite = keyframes`
-  from {
-    transform: perspective(600px) rotateY(-90deg);
-    opacity: 0;
-  }
-  to {
-    transform: perspective(600px) rotateY(0);
-    opacity: 1;
-  }
-`;
-
-const flipIn = keyframes`
-  from {
-    transform: perspective(600px) rotateY(90deg);
-    opacity: 0;
-  }
-  to {
-    transform: perspective(600px) rotateY(0);
-    opacity: 1;
-  }
-`;
-
-const flipX = keyframes`
-  from {
-    transform: perspective(600px) rotateX(90deg);
-    opacity: 0;
-  }
-  to {
-    transform: perspective(600px) rotateX(0);
-    opacity: 1;
   }
 `;
 
@@ -192,7 +158,6 @@ export const ProjectCardsHolidayStyle = styled.div`
   max-width: 600px;
   text-align: center;
   background: var(--card-background-color);
-  opacity: 0;
   transform-style: preserve-3d;
   backface-visibility: hidden;
   border-radius: 3px;
@@ -206,9 +171,7 @@ export const ProjectCardsHolidayStyle = styled.div`
     font-size: 15px;
   }
 
-  &.in-view {
-    animation: ${flipIn} 1.5s ease forwards;
-  }
+  
 
   .img-container {
     position: relative;
@@ -250,7 +213,6 @@ export const ProjectCardsJavascriptFrameworksStyle = styled.div`
   border: 3px solid var(--card-border-color);
   max-width: 600px;
   text-align: center;
-  opacity: 0;
   transform-style: preserve-3d;
   backface-visibility: hidden;
   border-radius: 3px;
@@ -263,10 +225,6 @@ export const ProjectCardsJavascriptFrameworksStyle = styled.div`
     text-align: left;
     font-family: var(--body-font);
     font-size: 15px;
-  }
-
-  &.in-view {
-    animation: ${flipInOpposite} 2s ease forwards;
   }
 
   .img-container {
@@ -294,7 +252,6 @@ export const ProjectCardsFefStyle = styled.div`
   border: 3px solid var(--card-border-color);
   max-width: 600px;
   text-align: center;
-  opacity: 0;
   transform-style: preserve-3d;
   backface-visibility: hidden;
   border-radius: 3px;
@@ -309,10 +266,7 @@ export const ProjectCardsFefStyle = styled.div`
     font-size: 15px;
   }
 
-  &.in-view {
-    animation: ${flipX} 2s ease forwards;
-  }
-
+  
   .img-container {
     position: relative;
 
