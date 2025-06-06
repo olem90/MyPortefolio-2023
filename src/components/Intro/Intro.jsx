@@ -9,7 +9,7 @@ export const Intro = () => {
     <IntroWrapper>
       <IntroStyle>
         <div>
-          <p>
+          <p className="intro-p-1">
             <strong>Hello</strong> and <strong>welcome</strong> to my
             Portfolio. I am <strong>Ole Marius Sandø Rognan</strong>.
           </p>
@@ -18,13 +18,10 @@ export const Intro = () => {
             your digital projects to life!
           </p>
           <div className="github-intro-icon-container">
-            <a target="_blank" href="https://github.com/olem90">
-              <FontAwesomeIcon
-                className="github-icon-intro"
-                icon={faGithub}
-              />
-            </a>
-            <span>Github Profile </span> 
+              <a className="github-link-combined" target="_blank" href="https://github.com/olem90">
+                <FontAwesomeIcon className="github-icon-intro" icon={faGithub} />
+                <span className="github-icon-text">Github Profile</span>
+              </a>
           </div>
         </div>
         <div className="dancing-dude">
