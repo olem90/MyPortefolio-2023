@@ -24,7 +24,7 @@ export const IntroWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     width: fit-content;
-    margin-block: 30px;
+    margin-block: 60px 80px;
 
     .github-link-combined {
       display: flex;

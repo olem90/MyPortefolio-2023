@@ -2,21 +2,21 @@ import styled from "styled-components";
 
 export const HoverTextStyle = styled.span`
   position: absolute;
-  top: -20px;
+  top: -23px;
   right: -23px;
   transform: translateX(-50%);
-  font-size: 15px;
+  font-size: 14px; 
   opacity: 1;
-  visibility: hidden;
+  visibility: hidden;   
   color: var(--text-light);
   transition:
     opacity 0.3s ease-in,
     visibility 0.3s ease-in;
 
   .github-icon-container:hover & {
-    opacity: 0.7;
+    opacity: 0.9;
     visibility: visible;
-    color: var(--text-light);
+    color: var(--text-light); 
   }
 
   @media(max-width: 800px) {
@@ -29,14 +29,14 @@ export const HoverTextStyle = styled.span`
 
 export const HoverTextProjectStyle = styled(HoverTextStyle)` 
   position: absolute;
-  top: -20px;
+  top: -23px;
   right: -36px;
   transform: translateX(-50%);
-  font-size: 15px;
+  font-size: 14px;
   visibility: hidden;
   transition:
-    opacity 0.3s ease-in,
-    visibility 0.3s ease-in;
+  opacity 0.3s ease-in,
+  visibility 0.3s ease-in;
  
   .project-icon-container:hover & {
     opacity: 0.7;
@@ -47,8 +47,8 @@ export const HoverTextProjectStyle = styled(HoverTextStyle)`
   @media(max-width: 800px) {
     visibility: visible;
     opacity: 1; 
-    font-size: 13px;  
-    right: -28px;       
+    font-size: 13px;
+    right: -28px;
   }
 `;
 
@@ -63,7 +63,7 @@ export const ProjectCardsWrapper = styled.div`
     justify-content: center;
     align-items: center;
     gap: 40px;
-    border-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   h2 {
@@ -175,6 +175,7 @@ export const ProjectCardsHolidayStyle = styled.div`
 
   .img-container {
     position: relative;
+    margin-bottom: 20px;
 
     img {
       object-fit: cover;
@@ -185,7 +186,7 @@ export const ProjectCardsHolidayStyle = styled.div`
     }
 
     &:hover img {
-      filter: brightness(40%);
+      filter: brightness(50%);
 
       @media (max-width: 800px) {
         filter: brightness(100%);
@@ -213,8 +214,6 @@ export const ProjectCardsJavascriptFrameworksStyle = styled.div`
   border: 3px solid var(--card-border-color);
   max-width: 600px;
   text-align: center;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
   border-radius: 3px;
   box-shadow: var(--box-shadow-light-blue);
   background: var(--card-background-color);
@@ -229,6 +228,7 @@ export const ProjectCardsJavascriptFrameworksStyle = styled.div`
 
   .img-container {
     position: relative;
+    margin-bottom: 20px;
 
     &:hover .fa-expand {
       display: block;
@@ -252,8 +252,6 @@ export const ProjectCardsFefStyle = styled.div`
   border: 3px solid var(--card-border-color);
   max-width: 600px;
   text-align: center;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
   border-radius: 3px;
   box-shadow: var(--shadow-blue);
   background: var(--card-background-color);
@@ -269,13 +267,14 @@ export const ProjectCardsFefStyle = styled.div`
   
   .img-container {
     position: relative;
+    margin-bottom: 20px;
 
     &:hover .fa-expand {
       display: block;
     }
 
     &:hover img {
-      filter: brightness(45%);
+      filter: brightness(50%);
 
       @media (max-width: 800px) {
         filter: brightness(100%);

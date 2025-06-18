@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterStyle = styled.footer`
   width: 100%;
   background: var(--blue);
-  height: 100px;
+  height: 160px;
   margin-top: 120px;
   display: flex;
   justify-content: center;
@@ -12,8 +12,9 @@ export const FooterStyle = styled.footer`
   .footer-text {
     color: var(--text-light: #000);
     font-family: "Roboto Mono", monospace;
-    font-size: 35px;
+    font-size: 42px;
     font-weight: bold;
+     
 
     @media (max-width: 800px) {
       font-size: 28px;
