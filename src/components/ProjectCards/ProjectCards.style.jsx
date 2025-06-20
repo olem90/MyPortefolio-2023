@@ -83,7 +83,7 @@ export const ProjectCardsWrapper = styled.div`
   }
 
   img {
-    max-width: 100%;
+    max-width: 97%;
     min-height: 100%;
     object-fit: cover;
     transition: filter 0.3s ease;
@@ -92,7 +92,7 @@ export const ProjectCardsWrapper = styled.div`
   .fullscreen-icon {
     position: absolute;
     bottom: 15px;
-    right: 15px;
+    right: 19px;
     font-size: 26px;
     display: none;
     color: #fff;
@@ -154,14 +154,12 @@ export const ProjectCardsWrapper = styled.div`
 `;
 
 export const ProjectCardsHolidayStyle = styled.div`
-  border: 3px solid var(--card-border-color);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   max-width: 600px;
   text-align: center;
   background: var(--card-background-color);
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
   border-radius: 3px;
-  box-shadow: var(--shadow-blue);
+  box-shadow: var(--box-shadow-light-blue);
   margin-bottom: 120px;
 
   p {
@@ -211,7 +209,8 @@ export const ProjectCardsHolidayStyle = styled.div`
 `;
 
 export const ProjectCardsJavascriptFrameworksStyle = styled.div`
-  border: 3px solid var(--card-border-color);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
   max-width: 600px;
   text-align: center;
   border-radius: 3px;
@@ -243,17 +242,21 @@ export const ProjectCardsJavascriptFrameworksStyle = styled.div`
     }
   }
 
+  &:hover {
+    
+  }
+
   @media (max-width: 800px) {
     margin-inline: auto;
   }
 `;
 
 export const ProjectCardsFefStyle = styled.div`
-  border: 3px solid var(--card-border-color);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   max-width: 600px;
   text-align: center;
   border-radius: 3px;
-  box-shadow: var(--shadow-blue);
+  box-shadow: var(--box-shadow-light-blue);
   background: var(--card-background-color);
   margin-bottom: 120px;
 

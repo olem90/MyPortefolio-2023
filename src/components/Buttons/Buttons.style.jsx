@@ -7,7 +7,6 @@ export const ModeButton = styled.button`
   padding: 3px;
   width: 100px;
   border: 2px solid var(--color-light);
-  border-radius: 3px;
   outline: 1px solid var(--color-light);
   white-space: nowrap;
   background: var(--background-light);
@@ -18,10 +17,10 @@ export const ModeButton = styled.button`
 
   @media (max-width: 550px) {
     height: 32px;
-    padding: 0;
+    padding: 0; 
     width: 88px;
     margin-right: 5px;
-    font-size: 12px;
+    font-size: 12px; 
     border: 1px solid var(--color-light);
     outline: 1px solid var(--color-light);
   }
@@ -31,4 +30,7 @@ export const ModeButton = styled.button`
     font-size: 10px;
     height: 25px;
   }
+
+
+
 `;
