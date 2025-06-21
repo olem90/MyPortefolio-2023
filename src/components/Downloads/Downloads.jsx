@@ -7,7 +7,7 @@ export const Downloads = () => {
         <ul>
           <li>
             <a
-              href="/public/docs/Ole_Marius_Rognan_CV_English.pdf"
+              href="/docs/Ole_Marius_Rognan_CV_English.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -16,7 +16,7 @@ export const Downloads = () => {
           </li>
           <li>
             <a
-              href="/public/docs/Ole_Marius_Rognan_CV_Norsk.pdf"
+              href="/docs/Ole_Marius_Rognan_CV_Norsk.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -25,7 +25,7 @@ export const Downloads = () => {
           </li>
           <li>
             <a
-              href="/public/docs/Digitalt_vitnemal.pdf"
+              href="/docs/Digitalt_vitnemal.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
