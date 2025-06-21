@@ -4,9 +4,9 @@ export const About = () => {
   return (
     <AboutStyle>
       <h2>About Me</h2>
-      <p>Hi! I’m a 33-year-old front-end developer originally from Trondheim, Norway. 
+      <p>Hi! I’m a 35-year-old(born in 1990) front-end developer originally from Trondheim, Norway. 
         I recently completed my studies at Noroff School of Technology and Digital Media, 
-        and I’m currently living in Madrid with my girlfriend. In October, we’ll be relocating to Oslo, 
+        and I’m currently living in Madrid with my girlfriend. In October, we’ll be moving to Oslo, 
         and I’m looking forward to the new opportunities that come with the move.
       </p>
 
