@@ -4,6 +4,9 @@ import { HomeWrapper } from "./Home.style";
 import { useTheme } from "../../ThemeContext/ThemeContext";
 import { Intro } from "../Intro/Intro";
 import { About } from "../About/About";
+import { Contact } from "../Contact/Contact";
+import { Downloads } from "../Downloads/Downloads";
+
 
 export const Home = () => {
   const { theme } = useTheme();
@@ -13,6 +16,8 @@ export const Home = () => {
       <Intro />
       <About />
       <ProjectCards />
+      <Downloads />
+      <Contact />
     </HomeWrapper>
   );
 };

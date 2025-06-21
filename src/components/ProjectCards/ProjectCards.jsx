@@ -18,7 +18,6 @@ import { useInView } from "react-intersection-observer";
 import HolidazeImage from "../../images/Holidaze-exam.png";
 import MegaMerch from "../../images/MegaMerch-FEF-CA.png";
 import SemesterProject2 from "../../images/SemesterProject2.png";
-import { Contact } from "../Contact/Contact";
 
 export const ProjectCards = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -217,8 +216,6 @@ export const ProjectCards = () => {
           </div>
         </div>
       </ProjectCardsJavascriptFrameworksStyle>
-
-      <Contact />
 
       <FullscreenModal
         isModalOpen={isModalOpen}
