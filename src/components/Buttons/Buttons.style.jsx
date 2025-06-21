@@ -10,7 +10,7 @@ export const ModeButton = styled.button`
   outline: 1px solid var(--color-light);
   white-space: nowrap;
   background: var(--background-light);
-  color: var(---text-light);
+  color: var(--text-light);
   font-family: "Roboto Mono", monospace;
   font-size: 14px;
   font-weight: bold;
