@@ -14,6 +14,10 @@ export const MyThemeProvider = ({ children }) => {
       currentTheme === "light" ? "#F0F0F0" : "#1a1a1a",
     );
     root.style.setProperty(
+      "--background-dark",
+      currentTheme === "light" ? "#1a1a1a" : "#F0F0F0",
+    );
+    root.style.setProperty(
       "--text-light",
       currentTheme === "light" ? "#000" : "#F0F0F0",
     );
@@ -22,13 +26,17 @@ export const MyThemeProvider = ({ children }) => {
       currentTheme === "light" ? "#000" : "#F0F0F0",
     );
 
+    // root.style.setProperty(
+    //  "--btn-color-light",
+    //   currentTheme === "light" ? "#FFF" : "#000",
+    // );
+
     if (currentTheme === "light") {
       root.style.setProperty("--blue", "var(--blue-light)");
       root.style.setProperty("--shadow-blue", "var(--box-shadow-dark-blue)");
       root.style.setProperty("--header-shadow", "var(--header-shadow-dark)");
-      root.style.setProperty(
-        "--card-background-color",
-        "var(--background-light-blue)",
+      root.style.setProperty("--btn-background", "var(--btn-background-dark)");
+      root.style.setProperty("--card-background-color","var(--background-light-blue)",
       );
       root.style.setProperty("--card-border-color", "var(--dark-metal)");
       root.style.setProperty("--icon-color", "var(--blue-dark)");
@@ -38,12 +46,13 @@ export const MyThemeProvider = ({ children }) => {
       root.style.setProperty("--blue", "var(--blue-dark)");
       root.style.setProperty("--shadow-blue", "var(--box-shadow-light-blue)");
       root.style.setProperty("--header-shadow", "var(--header-shadow-light)");
+      root.style.setProperty("--btn-background", "var(--btn-background-light)");
       root.style.setProperty(
         "--card-background-color",
         "var(--background-dark-blue)",
       );
       root.style.setProperty("--card-border-color", "var(--light-silver)");
-      root.style.setProperty("--icon-color", "var(--blue-light)");   
+      root.style.setProperty("--icon-color", "var(--blue-light)");
     }
   };
   const savedTheme = localStorage.getItem("theme") || "light";

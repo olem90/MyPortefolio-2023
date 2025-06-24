@@ -158,9 +158,9 @@ export const ProjectCardsHolidayStyle = styled.div`
   max-width: 600px;
   text-align: center;
   background: var(--card-background-color);
-  border-radius: 3px;
   box-shadow: var(--box-shadow-light-blue);
   margin-bottom: 120px;
+  border-radius: 20px;
 
   p {
     padding-inline: 20px;
@@ -168,8 +168,6 @@ export const ProjectCardsHolidayStyle = styled.div`
     font-family: var(--body-font);
     font-size: 15px;
   }
-
-  
 
   .img-container {
     position: relative;
@@ -213,7 +211,7 @@ export const ProjectCardsJavascriptFrameworksStyle = styled.div`
   backdrop-filter: blur(12px);
   max-width: 600px;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 20px;
   box-shadow: var(--box-shadow-light-blue);
   background: var(--card-background-color);
   margin-bottom: 100px;
@@ -255,7 +253,7 @@ export const ProjectCardsFefStyle = styled.div`
   border: 1px solid rgba(0, 0, 0, 0.05);
   max-width: 600px;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 20px;
   box-shadow: var(--box-shadow-light-blue);
   background: var(--card-background-color);
   margin-bottom: 120px;

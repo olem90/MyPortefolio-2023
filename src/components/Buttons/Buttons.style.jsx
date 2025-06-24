@@ -6,7 +6,7 @@ export const ModeButton = styled.button`
   height: 40px;
   padding: 3px;
   width: 100px;
-  border: 2px solid var(--color-light);
+  border: 1.5px solid var(--color-light);
   outline: 1px solid var(--color-light);
   white-space: nowrap;
   background: var(--background-light);
@@ -14,6 +14,14 @@ export const ModeButton = styled.button`
   font-family: "Roboto Mono", monospace;
   font-size: 14px;
   font-weight: bold;
+
+  &:hover {
+    background: var(--background-dark);
+    cursor: pointer;
+    border: 2px solid var(--btn-color-light);
+    outline: 1px solid var(--btn-color-light);
+    color: var(--background-light);
+  }
 
   @media (max-width: 550px) {
     height: 32px;

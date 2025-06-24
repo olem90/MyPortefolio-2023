@@ -6,30 +6,30 @@ export const Downloads = () => {
         <h2>CV & Certificates</h2>
         <ul>
           <li>
-            <a
+            <a className="cv"
               href="/docs/Ole_Marius_Rognan_CV_English.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
-              📄 CV (English)
+              CV (English)
             </a>
           </li>
           <li>
-            <a
+            <a className="cv"
               href="/docs/Ole_Marius_Rognan_CV_Norsk.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
-              📄 CV (Norwegian)
+               CV (Norwegian)
             </a>
           </li>
           <li>
-            <a
+            <a className="certificate"
               href="/docs/Digitalt_vitnemal.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
-              🎓 Front-End Certificate
+               Front-End Certificate
             </a>
           </li>
         </ul>
