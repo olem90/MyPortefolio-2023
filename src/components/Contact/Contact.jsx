@@ -25,12 +25,6 @@ export const Contact = () => {
           <span>Discord</span>
         </div>
 
-        <DiscordModal
-          isOpen={isDiscordModalOpen}
-          onClose={() => setDiscordModalOpen(false)}
-          discordTag="olerognanjan22ft#9663"
-        />
-
         <div className="single-icon-container">
           <a
             target="_blank"
@@ -53,6 +47,11 @@ export const Contact = () => {
           <span>LinkedIn</span>
         </div>
       </ContactIconContainer>
+      <DiscordModal
+          isOpen={isDiscordModalOpen}
+          onClose={() => setDiscordModalOpen(false)}
+          discordTag="olerognanjan22ft#9663"
+        />
     </ContactIconWrapper>
   );
 };

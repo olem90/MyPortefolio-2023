@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HoverTextStyle = styled.span`
   position: absolute;
   top: -23px;
-  right: -23px;
+  right: -19px;
   transform: translateX(-50%);
   font-size: 14px; 
   opacity: 1;
@@ -29,8 +29,8 @@ export const HoverTextStyle = styled.span`
 
 export const HoverTextProjectStyle = styled(HoverTextStyle)` 
   position: absolute;
-  top: -23px;
-  right: -36px;
+  top: -24px;
+  right: -33px;
   transform: translateX(-50%);
   font-size: 14px;
   visibility: hidden;
@@ -108,7 +108,7 @@ export const ProjectCardsWrapper = styled.div`
   }
 
   .github-icon {
-    font-size: 43px;
+    font-size: 41px;
     transition: color 0.3s;
     color: var(--icon-color);
   }
@@ -163,7 +163,7 @@ export const ProjectCardsHolidayStyle = styled.div`
   border-radius: 20px;
 
   p {
-    padding-inline: 20px;
+    padding-inline: 26px;
     text-align: left;
     font-family: var(--body-font);
     font-size: 15px;
@@ -171,10 +171,11 @@ export const ProjectCardsHolidayStyle = styled.div`
 
   .img-container {
     position: relative;
-    margin-bottom: 20px;
+    margin-block: 20px;
 
     img {
       object-fit: cover;
+      filter: brightness(85%);
     }
 
     &:hover .fa-expand {
@@ -217,7 +218,7 @@ export const ProjectCardsJavascriptFrameworksStyle = styled.div`
   margin-bottom: 100px;
 
   p {
-    padding-inline: 20px;
+    padding-inline: 26px;
     text-align: left;
     font-family: var(--body-font);
     font-size: 15px;
@@ -225,7 +226,12 @@ export const ProjectCardsJavascriptFrameworksStyle = styled.div`
 
   .img-container {
     position: relative;
-    margin-bottom: 20px;
+    margin-block: 20px;
+    
+  img {
+    object-fit: cover;
+    filter: brightness(85%);
+   }
 
     &:hover .fa-expand {
       display: block;
@@ -238,10 +244,6 @@ export const ProjectCardsJavascriptFrameworksStyle = styled.div`
         filter: brightness(100%);
       }
     }
-  }
-
-  &:hover {
-    
   }
 
   @media (max-width: 800px) {
@@ -259,7 +261,7 @@ export const ProjectCardsFefStyle = styled.div`
   margin-bottom: 120px;
 
   p {
-    padding-inline: 20px;
+    padding-inline: 26px;
     text-align: left;
     font-family: var(--body-font);
     font-size: 15px;
@@ -268,7 +270,12 @@ export const ProjectCardsFefStyle = styled.div`
   
   .img-container {
     position: relative;
-    margin-bottom: 20px;
+    margin-block: 20px;
+
+    img {
+    object-fit: cover;
+    filter: brightness(85%);
+   }
 
     &:hover .fa-expand {
       display: block;

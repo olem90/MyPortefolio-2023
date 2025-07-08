@@ -26,13 +26,9 @@ export const MyThemeProvider = ({ children }) => {
       currentTheme === "light" ? "#000" : "#F0F0F0",
     );
 
-    // root.style.setProperty(
-    //  "--btn-color-light",
-    //   currentTheme === "light" ? "#FFF" : "#000",
-    // );
-
     if (currentTheme === "light") {
       root.style.setProperty("--blue", "var(--blue-light)");
+      root.style.setProperty("--card-color-blue-light", "var(--blue-light)");
       root.style.setProperty("--shadow-blue", "var(--box-shadow-dark-blue)");
       root.style.setProperty("--header-shadow", "var(--header-shadow-dark)");
       root.style.setProperty("--btn-background", "var(--btn-background-dark)");
@@ -47,9 +43,7 @@ export const MyThemeProvider = ({ children }) => {
       root.style.setProperty("--shadow-blue", "var(--box-shadow-light-blue)");
       root.style.setProperty("--header-shadow", "var(--header-shadow-light)");
       root.style.setProperty("--btn-background", "var(--btn-background-light)");
-      root.style.setProperty(
-        "--card-background-color",
-        "var(--background-dark-blue)",
+      root.style.setProperty("--card-background-color", "var(--background-indigo-blue)",
       );
       root.style.setProperty("--card-border-color", "var(--light-silver)");
       root.style.setProperty("--icon-color", "var(--blue-light)");

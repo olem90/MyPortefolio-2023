@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const DiscordModalStyle = styled.div`
   display: flex;
   flex-direction: column;
+  margin: auto;
   width: 80%;
 
   h3 {
@@ -35,6 +36,11 @@ export const DiscordModalStyle = styled.div`
     font-size: 14px;
     outline: 1px solid transparent;
     border: 1px solid transparent;
+
+    &:hover {
+      color: rebeccapurple;
+      cursor: pointer;
+    }
   }
 
   .close-btn {
@@ -57,10 +63,10 @@ export const DiscordModalStyle = styled.div`
 export const DiscordModalWrapper = styled.div`
   border: 5px solid var(--card-border-color);
   min-width: 324px;
-  position: fixed;
-  top: 50%;
+  position: fixed; 
+  bottom: 50%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 99;
-  background: var(--card-background-color);
+  background: var(--card-background-color); 
 `;

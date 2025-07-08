@@ -12,7 +12,6 @@ html, body {
 :root {
     /* Light Mode Colors */
     --background-light: #e9e9e9;
-    --background-light-blue: #eff7ff;
     --background-light-blue: #d2e2ff;
     --background-light-lavender: #f3f0ff;
     --light-silver: #C5C6C7;
@@ -37,6 +36,7 @@ html, body {
     --background-dark: #000;
     --background-deep-gray: #121212;
     --background-dark-blue: #0a192f;
+    --background-indigo-blue: #1E3A8A;
     --dark-metal: #2a2a2a;
     --text-dark: #fff;
     --color-dark: #fff;

@@ -5,6 +5,7 @@ export const FullscreenModalStyleWrapper = styled.div`
   top: 0;
   bottom: 0;
   left: 0;
+  z-index: 1000;
   right: 0;
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
@@ -14,14 +15,13 @@ export const FullscreenModalStyleWrapper = styled.div`
 
   .modal {
     display: flex;
+    position: relative;
     flex-direction: column;
-
     height: auto;
-    max-width: 80%;
+    max-width: 70%;
     z-index: 99;
     border-radius: 3px;
-    border: 3px solid var(--card-border-color);
-
+    
     .close-modal-btn {
       border-radius: 0;
       color: #fff;
@@ -32,10 +32,10 @@ export const FullscreenModalStyleWrapper = styled.div`
       padding-inline: 0;
       padding-block: 8px;
       border: 2px solid transparent;
-      transition: border 0.5s ease;
-
+  
       &:hover {
-        border: 2px solid silver;
+        cursor:  pointer;
+        background: rgba(20, 23, 61, 0.99);
       }
     }
   }

@@ -66,6 +66,5 @@ export const ContactIconWrapper = styled.div`
     font-family: var(--h2-font);
   }
   
-  
   margin-inline: auto;
 `;
