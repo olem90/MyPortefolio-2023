@@ -83,7 +83,7 @@ export const ProjectCardsWrapper = styled.div`
   }
 
   img {
-    max-width: 97%;
+    max-width: 94%;
     min-height: 100%;
     object-fit: cover;
     transition: filter 0.3s ease;
@@ -102,7 +102,7 @@ export const ProjectCardsWrapper = styled.div`
     }
 
     @media (max-width: 800px) {
-      display: block;
+      display: none;
       color: #000;
     }
   }
@@ -149,7 +149,7 @@ export const ProjectCardsWrapper = styled.div`
   }
 
   @media (max-width: 800px) {
-    width: 96%;
+    width: 97%;
   }
 `;
 
@@ -171,7 +171,7 @@ export const ProjectCardsHolidayStyle = styled.div`
 
   .img-container {
     position: relative;
-    margin-block: 20px;
+    margin-block: 30px;
 
     img {
       object-fit: cover;
@@ -180,14 +180,14 @@ export const ProjectCardsHolidayStyle = styled.div`
 
     &:hover .fa-expand {
       display: block;
+
+      @media (max-width: 800px) {
+        display: none;
+      }
     }
 
     &:hover img {
-      filter: brightness(50%);
-
-      @media (max-width: 800px) {
-        filter: brightness(100%);
-      }
+      filter: brightness(50%); 
     }
   }
 
@@ -226,7 +226,7 @@ export const ProjectCardsJavascriptFrameworksStyle = styled.div`
 
   .img-container {
     position: relative;
-    margin-block: 20px;
+    margin-block: 30px;
     
   img {
     object-fit: cover;
@@ -270,7 +270,7 @@ export const ProjectCardsFefStyle = styled.div`
   
   .img-container {
     position: relative;
-    margin-block: 20px;
+    margin-block: 30px;
 
     img {
     object-fit: cover;

@@ -17,6 +17,14 @@ export const IntroWrapper = styled.div`
 
   .intro-p-1 {
     font-size: 22px; 
+
+    @media (max-width: 800px) {
+      font-size: 18px;
+    }
+
+    @media (max-width: 550px) {
+      font-size: 16px;
+    }
   }
 
   .github-intro-icon-container {
@@ -39,7 +47,7 @@ export const IntroWrapper = styled.div`
       &:hover .github-icon-text {
         color: rebeccapurple;
       }
-    };
+    }
 
     .github-icon-intro {
       font-size: 42px;
@@ -60,12 +68,19 @@ export const IntroWrapper = styled.div`
   }
 
   p { 
-    font-size: 16px;  
+    font-size: 16px;
+
+    @media (max-width: 800px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 550px) {
+      font-size: 13px;
+    }
   }
 
   .dancing-dude {
     margin-left: 70px
-   
   } 
 
   img { 
@@ -83,6 +98,11 @@ export const IntroWrapper = styled.div`
   }
 
   @media (max-width: 550px) {
+
+    img { 
+        width: 120px;
+    }
+
     p {
       padding-inline: 14px;
     }

@@ -13,7 +13,7 @@ export const ModeButton = styled.button`
   color: var(--text-light);
   font-family: "Roboto Mono", monospace;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
 
   &:hover {
     background: var(--background-dark);
@@ -23,14 +23,20 @@ export const ModeButton = styled.button`
     color: var(--background-light);
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 800px) {
     height: 32px;
     padding: 0; 
     width: 88px;
-    margin-right: 5px;
+    margin-right: 10px;
     font-size: 12px; 
     border: 1px solid var(--color-light);
     outline: 1px solid var(--color-light);
+  }
+
+  @media (max-width: 550px){
+    font-size: 12px; 
+    width: 78px;
+    height: 28px;
   }
 
   @media (max-width: 400px) {
