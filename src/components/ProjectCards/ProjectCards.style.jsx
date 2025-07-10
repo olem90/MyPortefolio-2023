@@ -92,7 +92,7 @@ export const ProjectCardsWrapper = styled.div`
   .fullscreen-icon {
     position: absolute;
     bottom: 15px;
-    right: 19px;
+    right: 30px;
     font-size: 26px;
     display: none;
     color: #fff;
@@ -175,7 +175,7 @@ export const ProjectCardsHolidayStyle = styled.div`
 
     img {
       object-fit: cover;
-      filter: brightness(85%);
+      filter: brightness(90%);
     }
 
     &:hover .fa-expand {
@@ -230,15 +230,19 @@ export const ProjectCardsJavascriptFrameworksStyle = styled.div`
     
   img {
     object-fit: cover;
-    filter: brightness(85%);
+    filter: brightness(90%);
    }
 
     &:hover .fa-expand {
       display: block;
+
+      @media (max-width: 800px) {
+        display: none;
+      }
     }
 
     &:hover img {
-      filter: brightness(40%);
+      filter: brightness(50%);
 
       @media (max-width: 800px) {
         filter: brightness(100%);
@@ -267,26 +271,25 @@ export const ProjectCardsFefStyle = styled.div`
     font-size: 15px;
   }
 
-  
   .img-container {
     position: relative;
     margin-block: 30px;
 
     img {
     object-fit: cover;
-    filter: brightness(85%);
+    filter: brightness(90%);
    }
 
     &:hover .fa-expand {
       display: block;
+
+      @media (max-width: 800px) {
+        display: none;
+      }
     }
 
     &:hover img {
       filter: brightness(50%);
-
-      @media (max-width: 800px) {
-        filter: brightness(100%);
-      }
     }
   }
 

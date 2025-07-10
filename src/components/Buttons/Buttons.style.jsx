@@ -3,17 +3,20 @@ import styled from "styled-components";
 export const ModeButton = styled.button`
   margin-left: auto;
   margin-right: 12px;
-  height: 40px;
-  padding: 3px;
-  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 35px;
+  width: 70px;
   border: 1.5px solid var(--color-light);
   outline: 1px solid var(--color-light);
   white-space: nowrap;
   background: var(--background-light);
   color: var(--text-light);
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: bold;
 
   &:hover {
     background: var(--background-dark);
@@ -24,10 +27,10 @@ export const ModeButton = styled.button`
   }
 
   @media (max-width: 800px) {
-    height: 32px;
-    padding: 0; 
-    width: 88px;
+    height: 26px;
+    width: 58px;
     margin-right: 10px;
+    padding-inline: 30px;
     font-size: 12px; 
     border: 1px solid var(--color-light);
     outline: 1px solid var(--color-light);
@@ -35,14 +38,21 @@ export const ModeButton = styled.button`
 
   @media (max-width: 550px){
     font-size: 12px; 
-    width: 78px;
-    height: 28px;
+    
   }
 
   @media (max-width: 400px) {
-    width: 70px;
+    width: 40px;
     font-size: 10px;
-    height: 25px;
+    height: 22px;
+    padding-inline: 25px;
+  }
+
+  @media (max-width: 350px) {
+    width: 40px;
+    font-size: 10px;
+    height: 18px;
+    padding-inline: 25px;
   }
 
 
