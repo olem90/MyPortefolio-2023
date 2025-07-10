@@ -7,16 +7,16 @@ export const ModeButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-inline: 35px;
+  padding-inline: 38px;
   width: 70px;
-  border: 1.5px solid var(--color-light);
+  border: 1px solid var(--color-light);
   outline: 1px solid var(--color-light);
   white-space: nowrap;
   background: var(--background-light);
   color: var(--text-light);
   font-family: 'Titillium Web', sans-serif;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
 
   &:hover {
     background: var(--background-dark);
@@ -28,9 +28,9 @@ export const ModeButton = styled.button`
 
   @media (max-width: 800px) {
     height: 26px;
-    width: 58px;
+    width: 62px;
     margin-right: 10px;
-    padding-inline: 30px;
+    padding-inline: 34px;
     font-size: 12px; 
     border: 1px solid var(--color-light);
     outline: 1px solid var(--color-light);
