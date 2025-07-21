@@ -11,7 +11,7 @@ export const MyThemeProvider = ({ children }) => {
     const root = document.documentElement;
     root.style.setProperty(
       "--background-light",
-      currentTheme === "light" ? "#F0F0F0" : "#1a1a1a",
+      currentTheme === "light" ? "#F0F0F0" : "#121212",
     );
     root.style.setProperty(
       "--background-dark",
