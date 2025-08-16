@@ -19,13 +19,13 @@ export const Intro = () => {
           </p>
           <div className="github-intro-icon-container">
               <a className="github-link-combined" target="_blank" href="https://github.com/olem90">
-                <FontAwesomeIcon className="github-icon-intro" icon={faGithub} />
+                <FontAwesomeIcon className="github-icon-intro" aria-label="github icon" icon={faGithub} />
                 <span className="github-icon-text">Github Profile</span>
               </a>
           </div>
         </div>
         <div className="dancing-dude">
-          <img src={Dancer}></img>
+          <img alt="Cartoon dancer" src={Dancer}></img>
         </div>
       </IntroStyle>
     </IntroWrapper>

@@ -18,6 +18,7 @@ export const Contact = () => {
           <a>
             <FontAwesomeIcon
               className="contact-icon"
+              aria-label="discord icon"
               icon={faDiscord}
               onClick={() => setDiscordModalOpen(true)}
             />
@@ -31,7 +32,7 @@ export const Contact = () => {
             href="mailto:olemariusrognan90@gmail.com"
             rel="noreferrer"
           >
-            <FontAwesomeIcon className="contact-icon" icon={faEnvelope} />
+            <FontAwesomeIcon className="contact-icon" aria-label="email icon" icon={faEnvelope} />
           </a>
           <span>Email</span>
         </div>
@@ -42,7 +43,7 @@ export const Contact = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon className="contact-icon" icon={faLinkedin} />
+            <FontAwesomeIcon className="contact-icon" aria-label="linkedin icon" icon={faLinkedin} />
           </a>
           <span>LinkedIn</span>
         </div>

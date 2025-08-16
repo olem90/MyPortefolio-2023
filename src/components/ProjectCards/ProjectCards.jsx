@@ -81,11 +81,12 @@ export const ProjectCards = () => {
         <div className="img-container">
           <img
             src={HolidazeImage}
-            alt="Holidaze"
+            alt="Holidaze website screenshot"
             className={isLandscape ? "landscape" : ""}
           ></img>
           <FontAwesomeIcon
             className="fullscreen-icon"
+            aria-label="open image in fullscreen"
             icon={faExpand}
             onClick={() => {
               openModal(HolidazeImage);
@@ -101,7 +102,7 @@ export const ProjectCards = () => {
               className="github-link"
               rel="noreferrer"
             >
-              <FontAwesomeIcon className="github-icon" icon={faGithub} />
+              <FontAwesomeIcon aria-label="github icon" className="github-icon" icon={faGithub} />
             </a>
             <HoverText />
           </div>
@@ -112,7 +113,7 @@ export const ProjectCards = () => {
               className="project-link"
               rel="noreferrer"
             >
-              <FontAwesomeIcon className="project-icon" icon={faGlobe} />
+              <FontAwesomeIcon aria-label="project website" className="project-icon" icon={faGlobe} />
             </a>
             <HoverTextProject />
           </div>
@@ -141,6 +142,7 @@ export const ProjectCards = () => {
           <Link>
             <FontAwesomeIcon
               className="fullscreen-icon"
+              aria-label="open image in fullscreen"
               icon={faExpand}
               onClick={() => openModal(Tbs)}
             />
@@ -154,7 +156,7 @@ export const ProjectCards = () => {
               className="github-link"
               rel="noreferrer"
             >
-              <FontAwesomeIcon className="github-icon" icon={faGithub} />
+              <FontAwesomeIcon className="github-icon" aria-label= "github icon" icon={faGithub} />
             </a>
             <HoverText />
           </div>
@@ -165,7 +167,7 @@ export const ProjectCards = () => {
               className="project-link"
               rel="noreferrer"
             >
-              <FontAwesomeIcon className="project-icon" icon={faGlobe} />
+              <FontAwesomeIcon className="project-icon" aria-label= "Project website" icon={faGlobe} />
             </a>
             <HoverTextProject />
           </div>
@@ -188,6 +190,7 @@ export const ProjectCards = () => {
           <img src={MegaMerch}></img>
           <FontAwesomeIcon
             className="fullscreen-icon"
+            aria-label="open image in fullscreen"
             icon={faExpand}
             onClick={() => openModal(MegaMerch)}
           />
@@ -201,7 +204,7 @@ export const ProjectCards = () => {
               className="github-link"
               rel="noreferrer"
             >
-              <FontAwesomeIcon className="github-icon" icon={faGithub} />
+              <FontAwesomeIcon className="github-icon" aria-label="github icon" icon={faGithub} />
             </a>
             <HoverText />
           </div>
@@ -213,7 +216,7 @@ export const ProjectCards = () => {
               className="project-link"
               rel="noreferrer"
             >
-              <FontAwesomeIcon className="project-icon" icon={faGlobe} />
+              <FontAwesomeIcon className="project-icon" aria-label="project website" icon={faGlobe} />
             </a>
             <HoverTextProject />
           </div>
