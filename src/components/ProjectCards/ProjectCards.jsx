@@ -17,7 +17,7 @@ import { FullscreenModal } from "../FullscreenModal/FullscreenModal";
 import { useInView } from "react-intersection-observer";
 import HolidazeImage from "../../images/Holidaze-exam.png";
 import MegaMerch from "../../images/MegaMerch-FEF-CA.png";
-import SemesterProject2 from "../../images/SemesterProject2.png";
+import Tbs from "../../images/TrondheimBoligStyling.png";
 
 export const ProjectCards = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -120,33 +120,36 @@ export const ProjectCards = () => {
       </ProjectCardsHolidayStyle>
 
       <ProjectCardsFefStyle ref={fefRef} className={fefInView ? "in-view" : ""}>
-        <h3>Semester Project 2</h3>
+        <h3>Trondheim Boligstyling</h3>
         <p>
-          This project focuses on developing an auction website where users can
-          list items for bidding and bid on others' listings. Key features
-          include user registration with initial credit allocation, the ability
-          to create and manage item listings, and functionality for placing
-          bids.
+          This is a website I built for my sister's styling company in Trondheim. 
+          The goal was to make it super easy for people to see what she offers and get in touch. 
         </p>
-        <p>
-          The site caters to both registered and unregistered users, offering
-          browsing capabilities for all, while reserving transactional
-          activities for registered users.
+        <h4 className="site-info">The site has:</h4>
+        <ul className="site-list">
+          <li>A gallery to show off past styling projects</li>
+          <li>A prices section so visitors know what to expect</li>
+          <li>An about us page to introduce the business</li>
+          <li>A simple contact form so people can reach out quickly</li>
+        </ul>
+        <p> I focused on keeping the design clean and easy to navigate, while still looking professional. 
+            The idea was to build trust with potential clients and make booking a 
+            service as straightforward as possible.
         </p>
         <div className="img-container">
-          <img src={SemesterProject2}></img>
+          <img src={Tbs}></img>
           <Link>
             <FontAwesomeIcon
               className="fullscreen-icon"
               icon={faExpand}
-              onClick={() => openModal(SemesterProject2)}
+              onClick={() => openModal(Tbs)}
             />
           </Link>
         </div>
         <div className="icons-container">
           <div className="github-icon-container">
             <a
-              href="https://github.com/olem90/Semester-Project-2"
+              href="https://github.com/olem90/TrondheimBoligStyling"
               target="_blank"
               className="github-link"
               rel="noreferrer"
@@ -157,7 +160,7 @@ export const ProjectCards = () => {
           </div>
           <div className="project-icon-container">
             <a
-              href="https://gregarious-gaufre-8b4c56.netlify.app/"
+              href="https://www.trondheimboligstyling.no"
               target="_blank"
               className="project-link"
               rel="noreferrer"

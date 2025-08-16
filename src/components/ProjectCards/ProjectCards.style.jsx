@@ -119,6 +119,17 @@ export const ProjectCardsWrapper = styled.div`
     color: var(--icon-color);
   }
 
+  .site-info {
+    text-align: start;
+    padding-inline: 26px;
+  }
+
+  .site-list > li {
+    padding: 0;
+    text-align: start;
+    padding-block: 2px;
+  }
+
   .github-icon-container,
   .project-icon-container {
     position: relative;
